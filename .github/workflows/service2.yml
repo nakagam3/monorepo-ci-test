@@ -6,6 +6,7 @@ jobs:
   npm_test:
     name: npm test
     runs-on: ubuntu-latest
+    if: ${{ false }}
 
     steps:
       - name: Pass
@@ -14,6 +15,7 @@ jobs:
   docker_build:
     name: docker build
     runs-on: ubuntu-latest
+    if: ${{ false }}
 
     steps:
       - name: Pass
