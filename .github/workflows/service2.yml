@@ -1,6 +1,8 @@
 name: service2
 on:
   pull_request:
+  paths:
+    - '**/applications/service2/**'
 
 jobs:
   npm_test:
