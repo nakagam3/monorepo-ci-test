@@ -1,22 +1,22 @@
 name: service2
 on:
   pull_request:
+  paths:
+    - '**/applications/service2/**'
 
 jobs:
   npm_test:
     name: npm test
     runs-on: ubuntu-latest
-    if: ${{ false }}
 
     steps:
       - name: Pass
-        run: echo ok
+        run: exit 1
 
   docker_build:
     name: docker build
     runs-on: ubuntu-latest
-    if: ${{ false }}
 
     steps:
       - name: Pass
-        run: echo ok
+        run: exit 1
