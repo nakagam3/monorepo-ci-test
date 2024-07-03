@@ -1,0 +1,20 @@
+name: service2
+on:
+  pull_request:
+
+jobs:
+  npm_test:
+    name: npm test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pass
+        run: exit 1
+
+  docker_build:
+    name: docker build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pass
+        run: exit 1
